@@ -1,0 +1,7 @@
+.next
+next.config.js
+next.config.mjs
+out/
+build/
+app/
+pages/
