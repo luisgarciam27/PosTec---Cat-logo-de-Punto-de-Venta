@@ -23,7 +23,7 @@ import {
   ShoppingBag,
   Warehouse
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { PRODUCTS, Product, HERO_SLIDES } from '../data';
 
 interface CartItem extends Product {
@@ -603,7 +603,7 @@ export default function HomePage() {
                     <div key={item.id} className="flex gap-4">
                       <div className="w-20 h-20 bg-zinc-100 rounded-xl overflow-hidden flex-shrink-0">
                         <img 
-                          src={item.image} 
+                          src={item.images[0]} 
                           alt={item.name} 
                           className="w-full h-full object-cover"
                           referrerPolicy="no-referrer"
