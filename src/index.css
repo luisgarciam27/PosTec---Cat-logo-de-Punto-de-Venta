@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --tracking-tight: -0.01em;
+  --tracking-tighter: -0.02em;
+  
+  /* Apple-inspired strategy colors */
+  --color-midnight: #1a2a3a;
+  --color-burnt-orange: #d97706;
+}
+
+body {
+  @apply bg-white text-black font-sans tracking-tight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tighter font-semibold;
+}
+
+.glass {
+  @apply bg-white/80 backdrop-blur-xl border-b border-zinc-100;
+}
+
+.text-midnight { color: var(--color-midnight); }
+.bg-midnight { background-color: var(--color-midnight); }
+.text-burnt-orange { color: var(--color-burnt-orange); }
+.bg-burnt-orange { background-color: var(--color-burnt-orange); }
+.border-burnt-orange { border-color: var(--color-burnt-orange); }
+
